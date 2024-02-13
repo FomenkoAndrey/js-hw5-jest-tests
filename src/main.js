@@ -90,6 +90,7 @@ console.log(counterFactory.value()) // 201
  */
 
 const myPrint = (a, b, res) => `${a}^${b}=${res}`
+
 const myPow = (a, b, callback) => {
   const pow = (x, n) => {
     if (n === 0) return 1 // Умова для n === 0
@@ -113,8 +114,9 @@ console.log(myPow(2, -2, myPrint)) // 2^-2=0.25
  * У реалізації функції має бути застосовано метод Math.max() і apply().
  */
 
-let list = [12, 23, 100, 34, 56, 9, 233]
-let myMax = (arg) => Math.max.apply(Math, arg) // max не залежить від контексту, в apply можна передати як Math, так і null
+const list = [12, 23, 100, 34, 56, 9, 233]
+
+const myMax = (arg) => Math.max.apply(Math, arg) // max не залежить від контексту, в apply можна передати як Math, так і null
 
 /*
  * apply - зручний спосіб передати масив даних як параметри функції.
@@ -129,9 +131,7 @@ console.log(myMax(list))
  * Створіть функцію myMul(a, b), яка буде множити числа а і b, повертаючи результат.
  */
 
-function myMul(a, b) {
-  return a * b
-}
+const myMul = (a, b) => a * b
 
 /*
  * Створіть функції myDouble(n), яка приймає один параметр і подвоює його.
