@@ -20,8 +20,8 @@ console.log('#5. JavaScript homework example file')
 // console.log(counter()) // 501
 // console.log(counter()) // 502
 // console.log(counter(0)) // 0
-// console.log(counter()) // 0
 // console.log(counter()) // 1
+// console.log(counter()) // 2
 
 /*
  * #2
